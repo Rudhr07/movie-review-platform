@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MovieBuzzCheck</title>
+    <meta http-equiv="refresh" content="0; URL=./index.html" />
+  </head>
+  <body>
+    <script>
+      // Client-side redirect for deep links on GitHub Pages
+      var redirect = window.location.pathname;
+      if (redirect && redirect !== '/' && !redirect.includes('index.html')) {
+        sessionStorage.setItem('redirectPath', redirect + window.location.search + window.location.hash);
+      }
+      window.location.replace('./');
+    </script>
+  </body>
+</html>

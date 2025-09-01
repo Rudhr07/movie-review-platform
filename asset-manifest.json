@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/movie-review-platform/static/css/main.ae7cae68.css",
+    "main.js": "/movie-review-platform/static/js/main.23803a8c.js",
+    "index.html": "/movie-review-platform/index.html",
+    "main.ae7cae68.css.map": "/movie-review-platform/static/css/main.ae7cae68.css.map",
+    "main.23803a8c.js.map": "/movie-review-platform/static/js/main.23803a8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae7cae68.css",
+    "static/js/main.23803a8c.js"
+  ]
+}
