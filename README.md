@@ -1,4 +1,4 @@
-# Movie Review Platform
+# MovieBuzzCheck
 
 <p align="center">
   <img src="frontend/public/logo.svg.png" alt="MovieBuzzCheck Logo" width="140" style="border-radius:24px" />
