@@ -286,6 +286,6 @@ For support, email [rudhr.chauhan@gmail.com] or create an issue on GitHub.
 ## Author
 
 **Rudhr Chauhan**  
->Creator & maintainer of MovieBuzzCheck (including custom logo design)
+Creator & maintainer of MovieBuzzCheck (including custom logo design)
 >🎓 BCA Student | Aspiring Developer
 >💼 Interested in Full Stack, Cybersecurity, and Cloud
