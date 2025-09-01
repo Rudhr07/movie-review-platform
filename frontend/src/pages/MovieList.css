@@ -1,0 +1,341 @@
+/* MovieList.css - Movie Listing Page Styles */
+
+.movie-list-page {
+  min-height: 100vh;
+}
+
+/* Removed hero section for cleaner layout */
+
+.movies-top-bar {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Main Content Layout */
+.movie-list-content {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.filters-sidebar {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+}
+
+.movies-main {
+  min-height: 600px;
+}
+
+/* Movies Header */
+.movies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-soft, #666);
+  margin: 0;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.clear-all-btn {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  color: #ff6b6b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.clear-all-btn:hover {
+  background: rgba(255, 107, 107, 0.2);
+  border-color: #ff6b6b;
+}
+
+/* Movies Grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* No Movies State */
+.no-movies {
+  text-align: center;
+  padding: 80px 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.no-movies-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  opacity: 0.6;
+}
+
+.no-movies h3 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.no-movies p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+  padding: 24px;
+  background: #0a174e;
+  border-radius: 16px;
+  border: 1px solid #133b88;
+  backdrop-filter: none;
+}
+
+.pagination-btn {
+  background: #133b88;
+  border: 1px solid #133b88;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #fff;
+  color: #133b88;
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 23, 78, 0.15);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pagination-info {
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.loading span {
+  margin-bottom: 20px;
+}
+
+.loading::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error State */
+.error {
+  text-align: center;
+  padding: 60px 40px;
+  background: rgba(255, 107, 107, 0.05);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error h3 {
+  color: #ff6b6b;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.error p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .movie-list-content {
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+  }
+  
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .movie-list-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .filters-sidebar {
+    position: static;
+    order: -1;
+  }
+  
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+  }
+  
+  .hero-section {
+    height: 320px;
+  }
+  
+  .hero-content {
+    padding: 40px 32px;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 280px;
+    margin-bottom: 32px;
+  }
+  
+  .hero-content {
+    padding: 32px 24px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .movies-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  
+  .pagination {
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .pagination-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .no-movies {
+    padding: 60px 20px;
+  }
+  
+  .no-movies-icon {
+    font-size: 48px;
+  }
+  
+  .no-movies h3 {
+    font-size: 24px;
+  }
+  
+  .no-movies p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 240px;
+  }
+  
+  .hero-content {
+    padding: 24px 16px;
+  }
+  
+  .hero-title {
+    font-size: 24px;
+  }
+  
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+  }
+  
+  .pagination {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .pagination-info {
+    order: -1;
+  }
+}
