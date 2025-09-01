@@ -277,9 +277,6 @@ movie-review-platform/
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
@@ -288,4 +285,6 @@ For support, email [rudhr.chauhan@gmail.com] or create an issue on GitHub.
 ## Author
 
 **Rudhr Chauhan**  
-Creator & maintainer of MovieBuzzCheck (including custom logo design).
+Creator & maintainer of MovieBuzzCheck (including custom logo design)
+🎓 BCA Student | Aspiring Developer
+💼 Interested in Full Stack, Cybersecurity, and Cloud
