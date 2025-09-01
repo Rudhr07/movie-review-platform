@@ -1,6 +1,12 @@
 # Movie Review Platform
 
+<p align="center">
+  <img src="frontend/public/logo.svg.png" alt="MovieBuzzCheck Logo" width="140" style="border-radius:24px" />
+</p>
+
 A full-stack movie review platform built with React frontend and Node.js/Express backend. Users can browse movies, read and write reviews, manage watchlists, and rate films.
+
+> Logo concept and graphic designed by **Rudhr Chauhan** using Canva.
 
 ## Features
 
@@ -271,6 +277,15 @@ movie-review-platform/
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Support
 
 For support, email [rudhr.chauhan@gmail.com] or create an issue on GitHub.
+
+## Author
+
+**Rudhr Chauhan**  
+Creator & maintainer of MovieBuzzCheck (including custom logo design).
